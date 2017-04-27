@@ -1,0 +1,36 @@
+Rails:
+  Enabled: true
+
+AllCops:
+  Exclude:
+    - 'Gemfile'
+    - 'bin/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'spec/spec_helper.rb'
+    - 'test/spec_helper.rb'
+#    - 'spec/teaspoon_env.rb'
+    - 'vendor/**/*'
+    - 'lib/tasks/display-coverage.rake'
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/ClassLength:
+  Max: 120
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/AbcSize:
+  Max: 27
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: single_quotes
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Lint/HandleExceptions:
+  Enabled: false
