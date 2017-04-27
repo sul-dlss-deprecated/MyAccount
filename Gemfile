@@ -22,7 +22,19 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+# A gem for adding Stanford University Libraries styles to Rails applications
+gem 'sul_styles'
 
+# Use sass-powered bootstrap
+gem 'bootstrap-sass', "~> 3.3.4"
+# Use bootstrap_form for easy form building
+gem 'bootstrap_form'
+# A gem for simple rails environment specific config
+gem 'config'
+# Use okcomputer to set up checks to monitor
+gem 'okcomputer'
+# For exception reporting
+gem 'honeybadger'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -35,6 +47,19 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'rspec-rails', '~> 3.0'
+
+  # Rubocop is a static code analyzer to enforce style.
+  gem 'rubocop', require: false
+
+  # scss-lint will test the scss files to enforce styles
+  gem 'scss_lint', require: false
+
+  # Capybara for feature/integration tests
+  gem 'capybara'
+
+  #Coveralls for code coverage
+  gem 'coveralls', require: false
 end
 
 group :development do
@@ -44,4 +69,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
