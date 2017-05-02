@@ -16,10 +16,10 @@ AllCops:
 Metrics/AbcSize:
   Max: 27
 
-# Because the home page spec has a lot to test.
+# Because the specs may have a lot of tests.
 Metrics/BlockLength:
   Exclude:
-    - 'spec/features/home_page_spec.rb'
+    - 'spec/**/*'
 
 Metrics/ClassLength:
   Max: 120
@@ -31,7 +31,7 @@ Metrics/MethodLength:
   Max: 15
 
 Metrics/ModuleLength:
-  Max: 120
+  Max: 120  
 
 Style/StringLiterals:
   Enabled: true
