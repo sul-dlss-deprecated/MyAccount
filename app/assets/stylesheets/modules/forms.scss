@@ -1,0 +1,33 @@
+.panel-group {
+  line-height: 1.9em;
+  list-style-type: none;
+}
+
+.panel-body {
+  margin-left: 20px;
+}
+
+a {
+  color: $sul-topnavbar-link-color;
+}
+
+.indent {
+  margin-left: 20px;
+}
+
+.pad {
+  padding-top: 20px;
+}
+
+.table-container {
+  border: 1px solid;
+  height: 400px;
+  overflow: auto;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid $grayish-yellow;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}

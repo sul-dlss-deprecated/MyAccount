@@ -13,17 +13,25 @@ AllCops:
     - 'vendor/**/*'
     - 'lib/tasks/display-coverage.rake'
 
-Metrics/LineLength:
-  Max: 120
+Metrics/AbcSize:
+  Max: 27
+
+# Because the home page spec has a lot to test.
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/features/home_page_spec.rb'
 
 Metrics/ClassLength:
+  Max: 120
+
+Metrics/LineLength:
   Max: 120
 
 Metrics/MethodLength:
   Max: 15
 
-Metrics/AbcSize:
-  Max: 27
+Metrics/ModuleLength:
+  Max: 120
 
 Style/StringLiterals:
   Enabled: true
