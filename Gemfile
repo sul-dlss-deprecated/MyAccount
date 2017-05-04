@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.7.1'
+gem 'rails', '~> 5.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -47,7 +46,8 @@ gem 'honeybadger'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'rspec-rails', '~> 3.0'
+  # gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails'
 
   # Rubocop is a static code analyzer to enforce style.
   gem 'rubocop', require: false
@@ -60,6 +60,7 @@ group :development, :test do
 
   #Coveralls for code coverage
   gem 'coveralls', require: false
+
 end
 
 group :development do
