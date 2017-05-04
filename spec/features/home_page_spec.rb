@@ -6,7 +6,7 @@ feature 'Home Page' do
       visit root_path
     end
     it 'should have the application name as the page title' do
-      expect(page).to have_title('My Borrowing Account')
+      expect(page).to have_title('My borrowing account')
     end
     it 'should display logo' do
       expect(page).to have_css('header.header-logo')

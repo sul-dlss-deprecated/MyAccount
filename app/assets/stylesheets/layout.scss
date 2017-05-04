@@ -24,26 +24,16 @@
   }
 }
 
-#sul-logo {
-  border-bottom: 0;
-  float: left;
-}
-
-// Disableing scss-lint checks in this selector
-// to attempt to fix a webkit iframe issue
-// scss-lint:disable PropertySortOrder, PropertySpelling
-.modal-body {
-  width: 1px;
-  min-width: 100%;
-  *width: 100%;
-}
-// scss-lint:enable PropertySortOrder, PropertySpelling
-
 @media (min-width: 768px) {
   #topnav,
   #main-container,
   #sul-footer {
     width: 750px;
+  }
+
+  .logo {
+    height: 50px;
+    margin-right: 12px;
   }
 }
 
@@ -53,6 +43,11 @@
   #sul-footer {
     width: 970px;
   }
+
+  .logo {
+    height: 100px;
+    margin-right: 24px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -60,6 +55,11 @@
   #main-container,
   #sul-footer {
     width: 1170px;
+  }
+
+  .logo {
+    height: 100px;
+    margin-right: 24px;
   }
 }
 
