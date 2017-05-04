@@ -1,12 +1,10 @@
 <div id="topnav-container">
   <header id="topnav" class="header-logo" role="banner">
     <%= link_to 'http://library.stanford.edu' do %>
-    <%= content_tag :span, "Stanford University Libraries", class: "sr-only" %>
-    <%= image_tag "sul-logo.png", class: "hidden-xs", alt: "", height: 25 %>
-    <%= image_tag "sul-logo-small.png", class: "visible-xs", alt: "", height: 25 %>
+      <%= content_tag :span, "Stanford University Libraries", class: "sr-only" %>
     <% end %>
 
-    <div class="header-links" id="login_id">
+    <div class="header-links">
         <%= link_to "Feedback", "http://searchworks.stanford.edu/feedback", target: '_blank', rel: 'noopener noreferrer'  %>
     </div>
 
@@ -14,4 +12,5 @@
 </div>
 
 <div class="topnav-divider">
+  <%= image_tag "logo.svg", class: "logo", alt: "" %>
 </div>
