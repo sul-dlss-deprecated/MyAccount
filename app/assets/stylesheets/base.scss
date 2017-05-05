@@ -10,18 +10,28 @@ a {
 
 h1 {
   color: $sul-h1-font-color;
-  font-size: 45px;
+  font-size: 2.1em;
   letter-spacing: -0.05em;
   padding-bottom: 0;
 }
 
 h2 {
   color: $sul-h2-font-color;
-  font-size: 31px;
+  font-size: 1.3em;
   font-weight: 100;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 980px) {
+  h1 {
+    font-size: 2.3em;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 1200px) {
   h1 {
     font-size: 2.3em;
   }
