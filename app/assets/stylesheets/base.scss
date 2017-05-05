@@ -1,23 +1,56 @@
-a {
-  border-bottom: 1px dotted $sul-link-border-color;
+#su-content a {
+  border-bottom: 0;
+  color: $sul-topnavbar-link-color;
+  font-weight: normal;
+  margin-left: 15px;
+  padding-bottom: 3px;
+  text-decoration: none;
 
   &.disabled {
     color: $gray-ccc;
     cursor: not-allowed;
     text-decoration: none;
   }
+
+  &.first {
+    margin-left: 0;
+  }
+}
+
+#su-content a:hover {
+  border-bottom: 1px solid $sul-topnavbar-link-color;
 }
 
 h1 {
   color: $sul-h1-font-color;
   font-size: 2.3em;
-  letter-spacing: -0.05em;
   padding-bottom: 0;
 }
 
 h2 {
   color: $sul-h2-font-color;
   font-size: 1.6em;
+  font-weight: 100;
+}
+
+@media (min-width: 980px) {
+  h1 {
+    font-size: 2.8em;
+  }
+
+  h2 {
+    font-size: 1.9em;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 2.8em;
+  }
+
+  h2 {
+    font-size: 1.9em;
+  }
 }
 
 dt {
@@ -35,6 +68,24 @@ dd {
 label,
 dt {
   font-weight: normal;
+}
+
+table {
+  border: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead td {
+  border: 0;
+  text-align: left;
+}
+
+td {
+  border: 0 solid $color-beige-40;
+  border-width: 1px 0 0;
+  padding: 12px 12px 12px 0;
+  vertical-align: top;
 }
 
 button:focus,
