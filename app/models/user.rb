@@ -1,18 +1,17 @@
 ###
-#  User class for authenticating via WebAuth
+#  User class for authenticating with devise
 ###
-class User
-  attr_accessor :webauth
+class User < ApplicationRecord
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :rememberable, :trackable, :validatable
 
-  def initialize(webauth)
-    @webauth = webauth
+  def email_required?
+    false
   end
 
-  def webauth_user?
-    webauth.present?
-  end
-
-  def non_webauth_user?
-    !webauth_user?
+  def will_save_change_to_email?
+    false
   end
 end
